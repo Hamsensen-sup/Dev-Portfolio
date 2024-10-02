@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite DE Grund", cursive;
+}
+body{
+    background: url("bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header{
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid black;
+    flex-wrap: wrap;
+}
+.header h1{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.right-header{
+    display: flex;
+    column-gap: 1.5rem;
+}
+.container{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-container{
+    background-color: white;
+    width: 60%;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-right: 20px solid black;
+    border-bottom: 5px solid black;
+}
+.text-container p{
+    padding: 1rem;
+}
+.skills-container i{
+    font-size: 4rem;
+}
+.skills-container h2{
+    background-color: black;
+    color: white;
+}
+.skills-container{
+    width: 60%;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    border-right: 20px solid black;
+    border-bottom: 5px solid black;
+    display: flex;
+    background-color: white;
+}
+.icons{
+    text-align: center;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.skills-desc{
+    padding: 1rem;
+}
+.skills-desc p{
+    border: 1px solid black;
+    padding: 1rem;
+}
+.images{
+    width: 40%;
+    padding: 1.5rem;
+}
+
+.acc-title{
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+.acc-desc{
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    border: 1px solid black;
+}
+.accordion.active .acc-desc{
+    height: 150px;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  @media screen and (max-width: 750px) {
+    .text-container, .skills-container{
+        width: 90%;
+    }
+    .container{
+        margin-top: 5rem;
+    }
+    .skills-container{
+        flex-direction: column;
+    }
+    .icons{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header h1{
+        border-bottom: 1px solid black;
+    }
+    .images{
+        width: 80%;
+    }
+  }
