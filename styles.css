@@ -34,7 +34,7 @@ body{
     display: flex;
     column-gap: 1.5rem;
 }
-.container{
+.main{
     margin-top: 6rem;
     display: flex;
     flex-direction: column;
@@ -142,13 +142,52 @@ body{
 .accordion.active .acc-desc{
     height: 150px;
     padding: 1rem;
+    padding-left: 2rem;
     overflow: auto;
 }
 
 .footer{
     background-color: black;
     color: white;
-    padding: 2rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.footer h1{
+    font-size: 3rem;
+    color: black;
+    background-color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.contacts a{
+    color: white;
+}
+.socials{
+    text-align: center; 
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.quote-footer{
+    background-color: white;
+    /* color: white; */
+    text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.quote-footer p {
+    width: 50%;
+    font-style: italic;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -174,7 +213,7 @@ body{
     .text-container, .skills-container{
         width: 90%;
     }
-    .container{
+    .main{
         margin-top: 5rem;
     }
     .skills-container{
@@ -193,6 +232,10 @@ body{
     }
     .gamepad i{
         font-size: 5rem;
+    }
+    .footer{
+        justify-content: center;
+        row-gap: 2rem;
     }
     /* .skills-text{
         height: 350px;
